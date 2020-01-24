@@ -18,7 +18,7 @@
 
     <dependencies>
         <!-- Only needed to run tests in a version of IntelliJ IDEA that bundles older versions -->
-        <!-- _____________________W O R K E D  in console____________________ -->
+        <!-- _____________________W O R K E D  from Intellij IDEA 2018.3.5____________________ -->
         <dependency>
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-launcher</artifactId>
@@ -37,8 +37,7 @@
             <version>5.6.0</version>
             <scope>test</scope>
         </dependency>
-        <!-- _____________________W O R K E D  in console____________________ -->
-
+        <!-- _________________________________________ -->
 
         <dependency>
             <groupId>org.junit.platform</groupId>
@@ -57,17 +56,6 @@
                     <source>${java.version}</source>
                     <target>${java.version}</target>
                 </configuration>
-            </plugin>
-            <plugin>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.19</version>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.junit.platform</groupId>
-                        <artifactId>junit-platform-surefire-provider</artifactId>
-                        <version>${junit.platform.version}</version>
-                    </dependency>
-                </dependencies>
             </plugin>
         </plugins>
     </build>
